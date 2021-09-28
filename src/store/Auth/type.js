@@ -1,0 +1,10 @@
+const AuthType = {
+  LOGIN: 'auth/LOGIN',
+  LOGIN_FAILED: 'auth/LOGIN_FAILED',
+  LOGIN_SUCCESS: 'auth/LOGIN_SUCCESS',
+  REGISTER: 'auth/REGISTER',
+  REGISTER_SUCCESS: 'auth/REGISTER_SUCCESS',
+  REGISTER_FAILED: 'auth/REGISTER_FAIL',
+};
+
+export default AuthType;
