@@ -12,14 +12,14 @@ function Login() {
   const [loading, setLoading] = useState(false)
   useEffect(() => {
 
-    if (token != null) {
-      history.push('/admin')
-    }
-    else {
-      history.push('/');
-      console.log("test");
-      openNotification();
-    }
+    // if (token != null) {
+    //   history.push('/admin')
+    // }
+    // else {
+    //   history.push('/');
+    //   console.log("test");
+    //   openNotification();
+    // }
   }, []);
 
   const layout = {
@@ -39,7 +39,7 @@ function Login() {
   const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
   const openNotification = () => {
     const args = {
-      message: 'Đăng nhập Admin',
+      message: 'Đăng nhập',
       description: 'Xin mời đăng nhập',
       duration: 2,
     };
