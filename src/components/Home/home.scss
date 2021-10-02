@@ -83,6 +83,8 @@
             max-width: 100%;
             object-fit: cover;
         }
+        h3 {
+        }
     }
 }
 //
@@ -91,7 +93,7 @@
         display: flex;
         align-items: center;
         h3 {
-            flex-basis: 10%;
+            flex-basis: 20%;
             font-size: 22px;
         }
         .title-wrap {
