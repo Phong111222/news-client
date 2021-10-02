@@ -2,8 +2,11 @@ import { useHistory } from "react-router-dom";
 import React, { useEffect, useState } from 'react';
 import { Layout, Input, message, notification, Spin } from "antd";
 import Button from "antd-button-color";
-import { LoadingOutlined } from '@ant-design/icons';
-import HeaderWeb from '../../antComponent/Header'
+import NewsPost from './component/newPost';
+import ReadMost from './component/readMost'
+import CategoryPost from './component/categoryPost'
+import './home.scss'
+const { Content } = Layout;
 function Home() {
     let history = useHistory();
     const [loading, setLoading] = useState(false)
@@ -14,9 +17,15 @@ function Home() {
     return (
         <div>
             <div className="home-container">
-                <Layout>
-                    <HeaderWeb />
-                </Layout>
+                <NewsPost />
+                <CategoryPost title={'Thế giới'} />
+                <CategoryPost title={'Việt Nam'} />
+                <CategoryPost title={'Covid'} />
+                <CategoryPost title={'Thể Thảo'} />
+                <CategoryPost title={'Tuổi trẻ'} />
+                <CategoryPost title={'Chính trị'} />
+                <CategoryPost title={'Sức khoẻ'} />
+                <ReadMost title={'Đọc nhiều nhất'} />
             </div>
 
         </div>

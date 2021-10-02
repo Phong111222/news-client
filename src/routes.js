@@ -3,12 +3,12 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
-
+import Detail from './components/Detail'
 
 const routes = [
   {
     path: '/login',
-    exact: true,
+    exact: false,
     component: (props) => <Login {...props} />,
   },
   {
@@ -18,8 +18,13 @@ const routes = [
   },
   {
     path: '/',
-    exact: false,
+    exact: true,
     component: (props) => <Home {...props} />,
+  },
+  {
+    path: '/Blog',
+    exact: false,
+    component: (props) => <Detail {...props} />,
   },
 
 ];
