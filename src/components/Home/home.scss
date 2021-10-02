@@ -1,0 +1,117 @@
+.main-new-post {
+    margin-bottom: 10px;
+
+    .img-news {
+        .item-img {
+            img {
+                max-width: 100%;
+                max-height: 350px;
+            }
+        }
+    }
+    .content-news {
+        .title-news-hot {
+            font-size: 25px;
+            &:hover {
+                color: aqua;
+            }
+        }
+        .short-content {
+            font-size: 20px;
+        }
+        .tag-count-comment {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            a {
+                color: #333;
+                &:hover {
+                    color: aqua;
+                }
+            }
+        }
+    }
+}
+.post-bottom {
+}
+.list-posts {
+    border-right: 1px solid #333;
+
+    .item-post {
+        a {
+            color: #333;
+            &:hover {
+                color: aqua;
+            }
+        }
+    }
+}
+.views-posts {
+    .title-view {
+        font-size: 14px;
+        line-height: 16px;
+        color: #9f224e;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    a {
+        color: #333;
+        &:hover {
+            color: aqua;
+        }
+    }
+}
+//
+.postCategoryMain {
+    .title-list-post {
+        display: flex;
+        align-items: center;
+        h3 {
+            flex-basis: 10%;
+            font-size: 22px;
+        }
+        .title-wrap {
+            width: 100%;
+            height: 1px;
+            background-color: rgb(121, 119, 119);
+        }
+    }
+    .item-post {
+        height: 300px;
+        img {
+            height: 160px;
+            max-width: 100%;
+            object-fit: cover;
+        }
+        h3 {
+        }
+    }
+}
+//
+.postCategoryMost {
+    .title-list-post {
+        display: flex;
+        align-items: center;
+        h3 {
+            flex-basis: 20%;
+            font-size: 22px;
+        }
+        .title-wrap {
+            width: 100%;
+            height: 1px;
+            background-color: rgb(121, 119, 119);
+        }
+    }
+    .itemMost {
+        display: flex;
+        align-items: center;
+        .sttText {
+            color: rgb(184, 0, 0);
+            font-size: 40px;
+            padding-right: 10px;
+        }
+        .text-title {
+            font-size: 25px;
+        }
+    }
+}
