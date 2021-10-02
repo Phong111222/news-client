@@ -6,7 +6,7 @@ import NewsPost from './component/newPost';
 import ReadMost from './component/readMost'
 import CategoryPost from './component/categoryPost'
 import './home.scss'
-const { Content } = Layout;
+import HeaderWeb from '../../antComponent/Header'
 function Home() {
     let history = useHistory();
     const [loading, setLoading] = useState(false)
@@ -26,6 +26,7 @@ function Home() {
                 <CategoryPost title={'Chính trị'} />
                 <CategoryPost title={'Sức khoẻ'} />
                 <ReadMost title={'Đọc nhiều nhất'} />
+
             </div>
 
         </div>

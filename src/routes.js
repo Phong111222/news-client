@@ -27,6 +27,8 @@ const routes = [
     component: (props) => <Detail {...props} />,
   },
 
+
+
 ];
 
 const MakeRoutes = (props) => {
