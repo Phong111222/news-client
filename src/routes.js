@@ -3,16 +3,11 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
-<<<<<<< HEAD
 import Detail from './components/Detail'
-=======
-
->>>>>>> 688cf6362c3fadcf740a2650744c94444cf962b2
 
 const routes = [
   {
     path: '/login',
-<<<<<<< HEAD
     exact: false,
     component: (props) => <Login {...props} />,
   },
@@ -23,8 +18,6 @@ const routes = [
   },
   {
     path: '/',
-=======
->>>>>>> 688cf6362c3fadcf740a2650744c94444cf962b2
     exact: true,
     component: (props) => <Home {...props} />,
   },
@@ -33,19 +26,6 @@ const routes = [
     exact: false,
     component: (props) => <Detail {...props} />,
   },
-<<<<<<< HEAD
-=======
-  {
-    path: '/register',
-    exact: false,
-    component: (props) => <Register {...props} />,
-  },
-  {
-    path: '/',
-    exact: false,
-    component: (props) => <Home {...props} />,
-  },
->>>>>>> 688cf6362c3fadcf740a2650744c94444cf962b2
 
 ];
 
