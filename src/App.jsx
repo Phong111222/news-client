@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MakeRoutes from './routes';
 import HeaderWeb from './antComponent/Header'
+import FooterWeb from './antComponent/Footer'
 import { Layout, Input, message, notification, Spin } from "antd";
 import { Provider } from 'react-redux';
 import { store, persistor } from './store';
@@ -20,6 +21,7 @@ export default function App() {
               <Content style={{ padding: '30px 150px' }}>
                 <MakeRoutes />
               </Content>
+              <FooterWeb />
             </Layout>)
               :
               (<MakeRoutes />)
