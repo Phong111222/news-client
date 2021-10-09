@@ -61,12 +61,12 @@ export default function HeaderWeb({ children }: any) {
                         <Space>
                             <Button
                                 onClick={() => {
-                                    dispatch(actions.formActions.showForm())
+                                    window.location.href = 'https://news-admin.vercel.app/admin'
                                 }}
                                 type="warning">
 
                                 <LoginOutlined />
-                                Đăng Nhập
+                                Về trang quản trị
                             </Button>
                             <Button
                                 onClick={() => dispatch(actions.formActions.toggleRegister(true))

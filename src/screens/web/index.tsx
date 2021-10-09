@@ -33,9 +33,9 @@ export default function LayoutHome({ children }: any) {
             setDateCategory(categories);
             dispatch(actions.categoryActions.setAll(categories))
         }
+        fetchDataTop()
         fetchData()
         fetchDataCategory()
-        fetchDataTop()
 
     },
         [])
@@ -59,7 +59,7 @@ export default function LayoutHome({ children }: any) {
                                 })
                             }
                             {
-                                dataTop &&
+
                                 <ReadMost data={dataTop} title={'Đọc nhiều nhất'} />
                             }
                         </div>
