@@ -1,0 +1,23 @@
+diff --git a/node_modules/rc-table/lib/Table.d.ts b/node_modules/rc-table/lib/Table.d.ts
+index 5d97e33..6a30a5c 100644
+--- a/node_modules/rc-table/lib/Table.d.ts
++++ b/node_modules/rc-table/lib/Table.d.ts
+@@ -49,7 +49,7 @@ export interface TableProps<RecordType = unknown> extends LegacyExpandableProps<
+     id?: string;
+     showHeader?: boolean;
+     components?: TableComponents<RecordType>;
+-    onRow?: GetComponentProps<RecordType>;
++    onRow?: GetComponentProps<RecordType> | any;
+     onHeaderRow?: GetComponentProps<readonly ColumnType<RecordType>[]>;
+     emptyText?: React.ReactNode | (() => React.ReactNode);
+     direction?: 'ltr' | 'rtl';
+diff --git a/node_modules/rc-table/lib/interface.d.ts b/node_modules/rc-table/lib/interface.d.ts
+index 40aca41..5f0b49c 100644
+--- a/node_modules/rc-table/lib/interface.d.ts
++++ b/node_modules/rc-table/lib/interface.d.ts
+@@ -160,4 +160,4 @@ export interface TableSticky {
+     offsetScroll?: number;
+     getContainer?: () => Window | HTMLElement;
+ }
+-export {};
++export { };

@@ -1,0 +1,10 @@
+.slider-main {
+    cursor: pointer;
+    img {
+        height: 500px;
+        max-width: 100%;
+        @media screen and (max-width: 992px) {
+            height: 200px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.footer-container {
+    position: relative;
+    .box-footer {
+        background-color: #b80000;
+        height: 220px;
+        padding: 10px 10rem;
+        .logo-footer {
+            width: 100px;
+            img {
+                max-width: 100%;
+            }
+        }
+        .bottom-footer {
+            background-color: #222222;
+            position: absolute;
+            width: 100vw;
+            left: 0;
+            height: 100%;
+            padding: 10px 180px;
+            p {
+                color: #ffffff;
+            }
+        }
+    }
+}
