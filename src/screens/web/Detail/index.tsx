@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import moment from "moment";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import { useAppSelector } from "../../../hook/useRedux";
 import postService from "../../../service/posts/postService";
 import './index.scss'
@@ -12,6 +12,7 @@ export default function Detail({ children }: any) {
     const listTop = useAppSelector(state => state.news.listTop)
     const [data, setData]: any = useState();
     const [dataOther, setDataOther] = useState([])
+    const history = useHistory()
     useEffect(() => {
 
 
@@ -69,7 +70,9 @@ export default function Detail({ children }: any) {
                                     {
                                         dataOther.map((item: any) => {
                                             return (
-                                                <div className="news-item">
+                                                <div onClick={() => {
+                                                    history.push(`/detail/${item.id}`)
+                                                }} className="news-item">
                                                     <img className="img-news" src={item.image} alt="" />
                                                     <p className="text-news">{item.title}</p>
                                                 </div>

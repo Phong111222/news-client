@@ -13,7 +13,7 @@ const config = combineReducers({
 const persistConfig: PersistConfig<any> = {
     key: 'root',
     storage,
-    whitelist: ['auth', 'news'],
+    whitelist: ['auth', 'news', 'category'],
     version: 1,
     // blacklist:[]
 }

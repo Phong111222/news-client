@@ -17,7 +17,7 @@ export default {
 
     },
     GetTop: () => {
-        return axiosConfig.get(`${API_CONFIG.NEWS.GET}`, {
+        return axiosConfig.get(`${API_CONFIG.NEWS.TOP}`, {
             params: {
                 page: 1,
                 pageSize: 1000,

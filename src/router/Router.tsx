@@ -1,5 +1,6 @@
 import { Route } from "react-router";
 import LayoutHome from "../screens/web";
+import Category from "../screens/web/Category";
 import Detail from "../screens/web/Detail";
 
 
@@ -22,6 +23,13 @@ const routes = [
         path: '/detail/:id',
         exact: false,
         component: (props: any) => <Detail {...props} />,
+
+
+    },
+    {
+        path: '/category/:id',
+        exact: false,
+        component: (props: any) => <Category {...props} />,
 
 
     },

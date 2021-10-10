@@ -64,7 +64,7 @@ function NewsPost({
                         <p><i className="far fa-clock"></i> {formatData(data[0].created_at)}</p>
                         <div className="tag-count-comment">
                             <a href="">{data[0].category.title}</a>
-                            <a href=""><i className="far fa-comments"></i> {data[0].views}</a>
+                            <a href=""><i className="far fa-eye"></i> {data[0].views}</a>
                         </div>
                     </Col>
                 </Row>
@@ -80,7 +80,7 @@ function NewsPost({
                                 }} md={12} sm={24} className="item-post">
                                     <h3>{item.title}</h3>
                                     <p dangerouslySetInnerHTML={createMarkup(item.content.slice(0, 50))}></p>
-                                    <a href=""><i className="far fa-comments"></i> {item.views}</a>
+                                    <a href=""><i className="far fa-eye"></i> {item.views}</a>
                                 </Col>)
                             })
                         }
@@ -96,7 +96,7 @@ function NewsPost({
                     <h3>{data[3].title}</h3>
                     <p dangerouslySetInnerHTML={createMarkup(data[3].content.slice(0, 50))}>
                     </p>
-                    <a href=""><i className="far fa-comments"></i> {data[3].views}</a>
+                    <a href=""><i className="far fa-eye"></i> {data[3].views}</a>
                 </Col>
             </Row>
         </div>

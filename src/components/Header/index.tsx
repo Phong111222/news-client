@@ -86,7 +86,9 @@ export default function HeaderWeb({ children }: any) {
                             {
                                 listCategory.map((menu: any) => {
                                     return (
-                                        <li className='menu-item'>
+                                        <li onClick={() => {
+                                            history.push(`/category/${menu.id}`)
+                                        }} className='menu-item'>
                                             {menu.title}
                                         </li>
                                     )
